@@ -1,0 +1,28 @@
+# Dependencias
+node_modules/
+
+# Variables de entorno (contienen la clave de API). Se versiona solo .env.example
+.env
+.env.*
+!.env.example
+
+# Compilación y caché de TypeScript
+dist/
+build/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Cobertura de tests
+coverage/
+
+# Sistema operativo
+.DS_Store
+
+# Editores (se conserva la configuración compartida de VS Code)
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
