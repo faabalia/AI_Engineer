@@ -1,0 +1,24 @@
+{
+  "name": "laboratorio-3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsx --test src/llm.test.ts",
+    "resumir": "tsx src/resumir.ts",
+    "demo:reintentos": "tsx src/demo-reintentos.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "openai": "^6.49.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
