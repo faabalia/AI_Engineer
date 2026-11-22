@@ -1,0 +1,20 @@
+{
+  "logical_models": {
+    "fallback": [
+      { "destination": "roto", "model": "fast" },
+      { "destination": "curso", "model": "fast" }
+    ]
+  },
+  "destinations": {
+    "roto": {
+      "format": "openai",
+      "base_url_env": "ROTO_BASE_URL",
+      "api_key_env": "ROTO_API_KEY"
+    },
+    "curso": {
+      "format": "openai",
+      "base_url_env": "OPENAI_BASE_URL",
+      "api_key_env": "OPENAI_API_KEY"
+    }
+  }
+}

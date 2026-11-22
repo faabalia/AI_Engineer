@@ -1,0 +1,20 @@
+{
+  "logical_models": {
+    "sin_fallback": [
+      { "destination": "clave_mala", "model": "fast" },
+      { "destination": "curso", "model": "fast" }
+    ]
+  },
+  "destinations": {
+    "clave_mala": {
+      "format": "openai",
+      "base_url_env": "OPENAI_BASE_URL",
+      "api_key_env": "CLAVE_MALA"
+    },
+    "curso": {
+      "format": "openai",
+      "base_url_env": "OPENAI_BASE_URL",
+      "api_key_env": "OPENAI_API_KEY"
+    }
+  }
+}

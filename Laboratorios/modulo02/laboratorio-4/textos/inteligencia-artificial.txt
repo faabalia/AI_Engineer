@@ -1,0 +1,500 @@
+LA INTELIGENCIA ARTIFICIAL: HISTORIA, FUNDAMENTOS, USOS Y RETOS
+
+1. Introducción
+
+La inteligencia artificial es el campo de la informática que intenta construir sistemas capaces de realizar tareas que,
+cuando las hace una persona, asociamos con la inteligencia: reconocer imágenes, entender y producir lenguaje, tomar
+decisiones, planificar o aprender de la experiencia. No se trata de una única tecnología, sino de un conjunto de técnicas,
+métodos y objetivos que han ido cambiando durante más de setenta años. Algunas de esas técnicas se basan en reglas escritas a
+mano por expertos, otras en el cálculo de probabilidades y otras en grandes redes neuronales que aprenden a partir de
+ejemplos. Lo que las une es el propósito: que una máquina resuelva problemas que antes parecían reservados a la mente humana.
+
+Hoy la inteligencia artificial está presente en la vida cotidiana de formas que a menudo pasan desapercibidas. Interviene
+cuando el móvil desbloquea la pantalla con la cara, cuando una aplicación propone la ruta más rápida, cuando un servicio de
+música recomienda canciones o cuando el correo electrónico separa el spam de los mensajes legítimos. En los últimos años,
+además, los sistemas generativos han llevado la tecnología al gran público: basta escribir una frase para obtener un texto,
+una imagen, un fragmento de código o una traducción. Este cambio ha despertado entusiasmo, curiosidad y también preocupación,
+y ha situado el debate sobre la inteligencia artificial en la conversación pública.
+
+Este documento ofrece un recorrido general por el tema. Empieza con una breve historia, explica los conceptos básicos,
+describe cómo funcionan el aprendizaje automático y las redes neuronales, y se detiene en los modelos de lenguaje actuales.
+Después repasa las aplicaciones más relevantes, los riesgos éticos, el marco regulatorio, el impacto económico y ambiental, y
+las prácticas de ingeniería necesarias para construir productos fiables. Termina con una reflexión sobre el futuro. El
+objetivo es que sirva como texto de referencia, con varias secciones y una extensión suficiente para comprobar cómo se
+comporta un sistema de resumen automático.
+
+2. Una breve historia
+
+Las raíces intelectuales de la inteligencia artificial son anteriores a los ordenadores. Filósofos y matemáticos llevaban
+siglos preguntándose si el razonamiento podía reducirse a reglas formales. En el siglo diecinueve, Ada Lovelace imaginó que
+las máquinas de cálculo de Charles Babbage podrían manipular símbolos más allá de los números, aunque también advirtió de que
+no tenían capacidad para originar nada por sí mismas. A comienzos del siglo veinte, la lógica matemática dio herramientas
+para formalizar el razonamiento, y los trabajos de Kurt Gödel, Alonzo Church y Alan Turing delimitaron qué problemas puede
+resolver un procedimiento mecánico y cuáles no.
+
+En 1950, Alan Turing publicó un artículo famoso en el que se preguntaba si las máquinas pueden pensar y proponía un
+experimento mental, hoy conocido como la prueba de Turing. La idea consistía en que un interrogador humano conversara por
+escrito con una persona y con una máquina sin saber cuál es cuál; si no lograba distinguirlas, tendría sentido decir que la
+máquina exhibe un comportamiento inteligente. Más que una definición rigurosa, la prueba fue una provocación que desplazó la
+discusión desde lo que es la mente hacia lo que una máquina es capaz de hacer, y todavía hoy se cita cada vez que aparece un
+sistema conversacional sorprendente.
+
+El nombre de inteligencia artificial nació en 1956, durante un taller de verano celebrado en el Dartmouth College, en Estados
+Unidos. Allí se reunieron investigadores como John McCarthy, Marvin Minsky, Claude Shannon y Nathaniel Rochester con la
+convicción de que cada aspecto del aprendizaje o de la inteligencia podía describirse con tanta precisión que sería posible
+construir una máquina que lo simulara. El optimismo fue enorme. En los años siguientes aparecieron programas que demostraban
+teoremas, jugaban a las damas con cierta destreza y resolvían problemas de álgebra, y varios pioneros predijeron que en pocas
+décadas habría máquinas tan capaces como las personas.
+
+Aquellas predicciones resultaron prematuras. Los primeros sistemas funcionaban bien en entornos pequeños y muy controlados,
+pero fracasaban al enfrentarse a la complejidad del mundo real. La falta de potencia de cálculo, la escasez de datos y las
+limitaciones de los métodos de entonces provocaron una pérdida de confianza. A mediados de los años setenta, los recortes de
+financiación dieron paso al primer invierno de la inteligencia artificial, un periodo de desencanto en el que muchos
+proyectos se abandonaron. Esta alternancia entre grandes expectativas y decepciones se repetiría más adelante, y es una
+lección útil para valorar con prudencia cualquier promesa tecnológica.
+
+En los años ochenta resurgió el interés gracias a los sistemas expertos, programas que codificaban el conocimiento de
+especialistas en forma de reglas del tipo si se cumple tal condición, entonces se concluye tal cosa. Se usaron para
+diagnosticar enfermedades, configurar ordenadores o prospectar minerales, y algunas empresas obtuvieron ahorros reales. Sin
+embargo, mantener miles de reglas resultaba caro, los sistemas eran frágiles ante situaciones imprevistas y no aprendían por
+sí solos. A finales de la década se produjo un nuevo desencanto, el segundo invierno, que volvió a reducir la inversión y el
+entusiasmo, aunque el trabajo científico siguió avanzando de manera más discreta.
+
+Durante los años noventa y los primeros dos mil, el campo se orientó hacia métodos estadísticos y hacia el aprendizaje
+automático, que permitía extraer patrones directamente de los datos en lugar de depender de reglas escritas a mano. En 1997,
+el ordenador Deep Blue de IBM venció al campeón mundial de ajedrez Garry Kasparov, un hito simbólico basado sobre todo en una
+búsqueda muy rápida de jugadas. Mientras tanto, técnicas como las máquinas de vectores de soporte, los árboles de decisión y
+los modelos probabilísticos se aplicaban con éxito al reconocimiento de voz, la clasificación de documentos y la detección de
+fraudes.
+
+El punto de inflexión más reciente llegó en la década de dos mil diez. En 2012, una red neuronal profunda llamada AlexNet
+ganó con un margen amplio un concurso de reconocimiento de imágenes, demostrando que, con suficientes datos y procesadores
+gráficos, el aprendizaje profundo superaba a los métodos anteriores. En 2016, el sistema AlphaGo, de DeepMind, derrotó a uno
+de los mejores jugadores de Go del mundo, un juego mucho más complejo que el ajedrez. En 2017, un grupo de investigadores de
+Google presentó la arquitectura Transformer, que se convertiría en la base de los grandes modelos de lenguaje y daría origen
+a la actual generación de sistemas generativos.
+
+3. Conceptos básicos
+
+Conviene empezar por distinguir algunos términos que a menudo se usan como sinónimos. La inteligencia artificial es el
+paraguas más amplio e incluye cualquier técnica que permita a una máquina exhibir comportamiento inteligente. El aprendizaje
+automático es una parte de ella: en lugar de programar explícitamente cada regla, se entrena un modelo con ejemplos para que
+descubra por sí mismo la relación entre las entradas y las salidas. A su vez, el aprendizaje profundo es una rama del
+aprendizaje automático que utiliza redes neuronales con muchas capas. Cada nivel es más específico que el anterior, de modo
+que todo el aprendizaje profundo es aprendizaje automático, pero no al revés.
+
+Un modelo es una función matemática con muchos parámetros ajustables. Durante el entrenamiento, el sistema recibe ejemplos,
+calcula una predicción, la compara con la respuesta esperada y modifica los parámetros para reducir el error. Repetido
+millones de veces, este proceso hace que el modelo capture regularidades de los datos. Después, en la fase de inferencia, el
+modelo ya entrenado se utiliza con datos nuevos para producir predicciones. Es importante separar ambas fases, porque
+entrenar suele requerir mucho tiempo y recursos, mientras que usar el modelo puede ser comparativamente barato, aunque a gran
+escala también acumule un coste considerable.
+
+Los datos son el combustible del aprendizaje automático. La calidad, la cantidad y la representatividad de los datos de
+entrenamiento condicionan de forma decisiva el comportamiento del modelo. Si los datos contienen errores, huecos o sesgos, el
+modelo los heredará y, a veces, los amplificará. Por eso una parte muy importante del trabajo práctico consiste en recopilar,
+limpiar, etiquetar y validar conjuntos de datos. También se acostumbra a dividirlos en tres grupos: uno para entrenar, otro
+para ajustar decisiones de diseño y otro reservado para evaluar el resultado final con información que el modelo nunca ha
+visto.
+
+Un problema habitual es el sobreajuste. Ocurre cuando un modelo se adapta tanto a los ejemplos de entrenamiento que memoriza
+detalles irrelevantes, incluido el ruido, y pierde capacidad de generalizar a casos nuevos. Es como un estudiante que se
+aprende las respuestas de un examen anterior sin entender la materia. Para combatirlo se usan técnicas de regularización, se
+recogen más datos, se simplifica el modelo o se detiene el entrenamiento a tiempo. Lo contrario, el subajuste, sucede cuando
+el modelo es demasiado simple para capturar el patrón. Encontrar el equilibrio entre ambos extremos es una de las tareas
+centrales del oficio.
+
+4. Aprendizaje automático
+
+Existen varias formas de aprendizaje, según el tipo de supervisión disponible. En el aprendizaje supervisado, cada ejemplo de
+entrenamiento viene acompañado de la respuesta correcta, por ejemplo una foto y la etiqueta gato o perro, o un historial de
+compras y el dato de si el cliente abandonó el servicio. Es el paradigma más extendido en la industria y resuelve dos grandes
+familias de problemas: la clasificación, en la que se predice una categoría, y la regresión, en la que se predice un valor
+numérico, como el precio de una vivienda o la demanda de electricidad de mañana.
+
+En el aprendizaje no supervisado no hay respuestas correctas disponibles y el sistema debe encontrar estructura por su
+cuenta. Un ejemplo típico es el agrupamiento, que reúne clientes con comportamientos parecidos sin que nadie haya definido de
+antemano los grupos. Otro es la reducción de dimensionalidad, que resume datos con cientos de variables en unas pocas
+dimensiones fáciles de visualizar. Esta clase de métodos resulta útil para explorar datos, detectar anomalías y preparar
+información para otros modelos, aunque evaluar si el resultado es bueno resulta más difícil, precisamente porque no existe
+una solución de referencia con la que compararlo.
+
+El aprendizaje por refuerzo plantea el problema de otra manera. Un agente interactúa con un entorno, realiza acciones y
+recibe recompensas o penalizaciones; su objetivo es aprender una estrategia que maximice la recompensa acumulada a largo
+plazo. Así aprendieron sistemas como AlphaGo, que mejoró jugando millones de partidas contra sí mismo, y así se entrenan
+robots que aprenden a caminar o a manipular objetos. El enfoque es potente, pero necesita muchísimas interacciones y exige
+diseñar con cuidado la recompensa, porque un agente puede encontrar atajos inesperados que cumplen la letra del objetivo y
+traicionan su intención.
+
+Entre el aprendizaje supervisado y el no supervisado existe un terreno intermedio muy fértil. El aprendizaje autosupervisado
+fabrica sus propias etiquetas a partir de los datos, por ejemplo ocultando una palabra de una frase y pidiendo al modelo que
+la adivine. Como no requiere anotación humana, permite aprovechar cantidades gigantescas de texto, imágenes o audio
+disponibles en internet. Este es el principio con el que se entrenan los grandes modelos de lenguaje actuales y buena parte
+de los modelos de imagen: primero aprenden representaciones generales del mundo a partir de datos sin etiquetar y después se
+adaptan a tareas concretas con muy pocos ejemplos.
+
+Para saber si un modelo funciona hay que medirlo con métricas adecuadas, y elegirlas bien no es trivial. La exactitud, que es
+el porcentaje de aciertos, engaña cuando las clases están desequilibradas: un detector de fraude que siempre responda que no
+hay fraude acertaría casi siempre y sería inútil. Por eso se usan también la precisión, que mide cuántas de las alertas eran
+correctas, y la exhaustividad, que mide cuántos casos reales se detectaron. Además de las métricas globales, conviene
+analizar los errores por subgrupos, porque un buen promedio puede esconder un rendimiento muy deficiente para ciertos
+colectivos o situaciones concretas.
+
+5. Redes neuronales y aprendizaje profundo
+
+Las redes neuronales artificiales se inspiran, de forma muy libre, en el cerebro. Una red está formada por unidades
+sencillas, llamadas neuronas, organizadas en capas. Cada neurona recibe números de la capa anterior, los multiplica por unos
+pesos, los suma, aplica una función no lineal y pasa el resultado a la capa siguiente. Aunque cada operación es elemental, la
+combinación de millones de ellas permite representar funciones extremadamente complejas. El entrenamiento consiste en ajustar
+los pesos mediante un algoritmo llamado descenso por gradiente, que utiliza la retropropagación para calcular cuánto
+contribuyó cada peso al error y en qué dirección conviene modificarlo.
+
+La idea de las redes neuronales es antigua. El perceptrón, un modelo de una sola capa, se propuso en los años cincuenta, y en
+los ochenta la retropropagación hizo posible entrenar redes con varias capas. Sin embargo, durante mucho tiempo fueron
+difíciles de entrenar y se veían superadas por otros métodos. Lo que cambió el panorama fue la confluencia de tres factores:
+conjuntos de datos enormes, procesadores gráficos capaces de realizar millones de multiplicaciones en paralelo y mejoras
+algorítmicas que estabilizaron el entrenamiento de redes muy profundas. Con esa combinación, el aprendizaje profundo empezó a
+batir récords en visión, voz y traducción.
+
+Existen arquitecturas especializadas según el tipo de dato. Las redes convolucionales explotan la estructura espacial de las
+imágenes aplicando filtros que detectan bordes, texturas y formas, y que se combinan en capas sucesivas para reconocer
+objetos completos. Las redes recurrentes procesan secuencias paso a paso, manteniendo una memoria del pasado, y se usaron
+durante años para texto y audio. Las redes de grafos trabajan con datos conectados, como moléculas o redes sociales. Cada
+diseño incorpora una suposición sobre la estructura del problema, y esa suposición reduce la cantidad de datos necesarios
+para aprender, algo que los investigadores llaman sesgo inductivo.
+
+Un rasgo notable del aprendizaje profundo es que aprende sus propias representaciones. En los métodos clásicos, un ingeniero
+debía diseñar a mano las características relevantes de los datos, por ejemplo los bordes de una imagen o la frecuencia de
+ciertas palabras. Una red profunda descubre esas características automáticamente: las primeras capas detectan elementos
+simples y las últimas combinan esos elementos en conceptos abstractos. Esta capacidad explica gran parte de su éxito, pero
+tiene un precio, la opacidad. Es muy difícil explicar por qué una red concreta tomó una decisión determinada, y eso complica
+su uso en ámbitos donde se exige justificar cada resultado.
+
+6. Modelos de lenguaje y sistemas generativos
+
+La arquitectura Transformer, presentada en 2017 bajo el título «Attention Is All You Need», sustituyó el procesamiento
+secuencial de las redes recurrentes por un mecanismo llamado atención. Con él, cada elemento de una secuencia puede mirar
+directamente a todos los demás y decidir cuáles son relevantes para interpretarlo. Esto tiene dos ventajas: captura
+relaciones entre palabras muy alejadas y permite procesar la secuencia entera en paralelo, lo que aprovecha mucho mejor el
+hardware moderno. Gracias a ello se pudieron entrenar modelos con cientos de miles de millones de parámetros, algo impensable
+con las arquitecturas anteriores.
+
+Un gran modelo de lenguaje se entrena, en esencia, para predecir el siguiente fragmento de texto a partir de lo anterior. Los
+fragmentos se llaman tokens y pueden ser palabras enteras, partes de palabras o signos de puntuación. Con ese objetivo tan
+sencillo, repetido sobre una cantidad inmensa de texto, el modelo aprende gramática, estilo, hechos sobre el mundo y ciertos
+patrones de razonamiento. Después se refina con técnicas adicionales, como el ajuste con ejemplos de instrucciones y el
+aprendizaje a partir de valoraciones humanas, para que sus respuestas resulten más útiles, más seguras y más fáciles de
+dirigir mediante peticiones escritas en lenguaje natural.
+
+Estos modelos tienen capacidades sorprendentes. Pueden resumir documentos, traducir entre idiomas, redactar correos, explicar
+conceptos, escribir y corregir código, extraer datos de textos desordenados o mantener una conversación coherente durante
+muchos turnos. Muchas de esas habilidades aparecen sin haber sido programadas de forma explícita, simplemente porque estaban
+implícitas en los datos. También es posible adaptarlos con pocos ejemplos incluidos en la propia petición, una técnica
+conocida como aprendizaje en contexto, que evita tener que volver a entrenar el modelo para cada nueva tarea y reduce de
+manera drástica el esfuerzo de desarrollo.
+
+Pero tienen limitaciones importantes. La más conocida es la alucinación: el modelo puede producir afirmaciones falsas con un
+tono totalmente seguro, porque está optimizado para generar texto plausible y no para verificar la verdad. También carecen de
+conocimiento sobre hechos posteriores a su entrenamiento, pueden ser inconsistentes entre una respuesta y otra, y son
+sensibles a la forma exacta de la pregunta. Además, su ventana de contexto, es decir, la cantidad de texto que pueden
+considerar a la vez, es finita. Por todo ello, para usos serios se suele complementar el modelo con fuentes externas,
+comprobaciones y supervisión humana en los puntos críticos.
+
+Una técnica muy extendida para reducir esos problemas es la generación aumentada por recuperación. Antes de responder, el
+sistema busca en una colección de documentos, por ejemplo la documentación interna de una empresa, los fragmentos más
+relevantes para la pregunta y los incluye en la petición al modelo. De este modo la respuesta se apoya en información
+concreta y actualizable, y es posible citar las fuentes. La calidad del resultado depende entonces de cómo se trocean los
+documentos, de cómo se buscan y de cómo se presentan al modelo, de modo que la ingeniería alrededor del modelo importa tanto
+como el modelo mismo.
+
+Los sistemas generativos no se limitan al texto. Los modelos de difusión aprenden a generar imágenes partiendo de ruido y
+eliminándolo paso a paso hasta obtener una figura coherente guiada por una descripción escrita. Existen modelos que producen
+música, voz sintética, vídeo y modelos tridimensionales, y otros multimodales que combinan varios tipos de entrada, como
+analizar una fotografía y responder preguntas sobre ella. Esta capacidad creativa abre posibilidades en el diseño, el cine y
+la educación, pero plantea cuestiones delicadas sobre derechos de autor, suplantación de identidad y autenticidad de los
+contenidos que circulan por la red.
+
+Cada vez se utilizan más los llamados agentes, sistemas en los que un modelo de lenguaje no solo responde, sino que decide
+qué acciones realizar. Puede llamar a herramientas externas, consultar una base de datos, ejecutar código, buscar en la web o
+encadenar varios pasos para completar una tarea. El modelo actúa como un cerebro que planifica, y el programa que lo rodea
+ejecuta las acciones y le devuelve los resultados. Este enfoque amplía mucho lo que se puede automatizar, pero también
+multiplica los riesgos: un error de razonamiento puede traducirse en una acción con consecuencias reales, por lo que se
+necesitan límites claros, permisos mínimos y registros de todo lo que ocurre.
+
+7. Visión, voz y otros campos
+
+La visión por computador es una de las áreas donde el aprendizaje profundo ha tenido más éxito. Los sistemas actuales
+clasifican imágenes, localizan y delimitan objetos, segmentan cada píxel según a qué elemento pertenece, estiman la
+profundidad y siguen el movimiento en un vídeo. Estas capacidades se aplican en el control de calidad de las fábricas, en la
+lectura de matrículas, en la agricultura de precisión, en la inspección de infraestructuras con drones y en el análisis de
+imágenes médicas. En muchos de esos casos el sistema iguala o supera a un observador humano en tareas concretas y bien
+delimitadas, aunque suele fallar ante situaciones muy distintas de las que vio al entrenarse.
+
+El reconocimiento y la síntesis de voz también han avanzado de manera notable. Los modelos actuales transcriben
+conversaciones con una precisión elevada incluso con ruido de fondo y acentos diversos, y generan voces sintéticas casi
+indistinguibles de las humanas. Esto ha permitido asistentes de voz, subtitulado automático, herramientas de accesibilidad
+para personas con discapacidad visual o auditiva y servicios de traducción simultánea. Al mismo tiempo, la facilidad para
+clonar una voz con unos pocos segundos de grabación ha dado lugar a estafas telefónicas y a campañas de desinformación, un
+recordatorio de que cada capacidad técnica tiene usos legítimos y usos abusivos.
+
+La robótica combina percepción, planificación y control para que las máquinas actúen en el mundo físico. Es un campo mucho
+más difícil que el procesamiento de texto, porque el mundo real es impredecible, los sensores tienen ruido y los errores
+pueden causar daños. Aun así, los robots de almacén, los vehículos autónomos en entornos acotados y los brazos industriales
+guiados por visión ya forman parte de la economía. La combinación de modelos de lenguaje con robots, que permite dar
+instrucciones en lenguaje natural, es una línea de investigación muy activa, pero la fiabilidad y la seguridad exigidas en el
+entorno físico son mucho mayores que en el digital.
+
+En la investigación científica, la inteligencia artificial se ha convertido en una herramienta de primer orden. El sistema
+AlphaFold, por ejemplo, predice con gran exactitud la estructura tridimensional de las proteínas a partir de su secuencia de
+aminoácidos, un problema que había resistido a los biólogos durante décadas y que acelera el estudio de enfermedades y el
+diseño de fármacos. Modelos similares ayudan a descubrir materiales nuevos, a predecir el tiempo atmosférico, a analizar
+datos de telescopios y a proponer experimentos. En estos casos la máquina no sustituye al científico, sino que amplía su
+capacidad de explorar espacios de posibilidades demasiado grandes para recorrerlos a mano.
+
+8. Aplicaciones en la sociedad y la economía
+
+En el ámbito sanitario, la inteligencia artificial se emplea para ayudar a interpretar radiografías, resonancias y
+fotografías de la retina, para priorizar urgencias, para anticipar el deterioro de pacientes hospitalizados y para acelerar
+la investigación de medicamentos. También se usa para transcribir las consultas y redactar borradores de informes, de modo
+que los profesionales dediquen menos tiempo a la burocracia. Los beneficios potenciales son grandes, pero los requisitos son
+estrictos: los sistemas deben validarse con estudios clínicos rigurosos, funcionar bien con poblaciones diversas, proteger la
+privacidad de los datos y dejar siempre la decisión final en manos de un profesional cualificado.
+
+En la educación, los asistentes basados en modelos de lenguaje pueden actuar como tutores pacientes que explican un concepto
+de varias maneras, proponen ejercicios adaptados al nivel del estudiante y ofrecen retroalimentación inmediata. Los docentes
+los utilizan para preparar materiales, generar rúbricas o adaptar contenidos a alumnos con necesidades distintas. Sin
+embargo, también plantean desafíos: la tentación de delegar el esfuerzo intelectual, la dificultad de evaluar trabajos que
+pueden haber sido generados por una máquina y el riesgo de que los estudiantes acepten sin crítica respuestas incorrectas.
+Muchos centros están rediseñando sus evaluaciones y enseñando a usar estas herramientas con espíritu crítico.
+
+En la industria y la logística, los modelos predictivos anticipan averías antes de que ocurran, optimizan rutas de reparto,
+ajustan inventarios a la demanda esperada y reducen el consumo de energía en las instalaciones. En el sector financiero se
+aplican a la detección de fraudes, a la evaluación del riesgo crediticio y al análisis de grandes volúmenes de información de
+mercado. En el comercio electrónico y en los servicios de contenido, los sistemas de recomendación personalizan la oferta
+para cada usuario. En todos estos casos, el valor suele proceder de pequeñas mejoras de eficiencia repetidas millones de
+veces, más que de grandes saltos espectaculares.
+
+En el desarrollo de software, los asistentes de programación sugieren código, explican fragmentos desconocidos, generan
+pruebas y ayudan a localizar errores. Han cambiado la forma de trabajar de muchos equipos, que ahora dedican más tiempo a
+revisar, diseñar y decidir, y menos a escribir código repetitivo. Pero el código generado puede contener fallos sutiles o
+vulnerabilidades, por lo que sigue siendo imprescindible entenderlo, probarlo y revisarlo. La responsabilidad sobre lo que se
+publica continúa siendo de las personas, y los equipos que mejor aprovechan estas herramientas son los que mantienen buenas
+prácticas de pruebas automáticas y revisión por pares.
+
+La administración pública y los servicios al ciudadano también incorporan estas tecnologías, por ejemplo para clasificar
+solicitudes, resumir expedientes, traducir documentos o atender consultas frecuentes. Los potenciales ahorros de tiempo son
+considerables, pero el contexto exige cautelas adicionales. Cuando un sistema influye en el acceso a prestaciones, en la
+asignación de recursos o en procedimientos sancionadores, se necesitan transparencia, posibilidad de recurso y supervisión
+humana efectiva. Una decisión automatizada que afecta a los derechos de una persona no puede convertirse en una caja negra
+que nadie sabe explicar ni corregir, y varios países ya han tenido que rectificar sistemas mal diseñados.
+
+9. Ética, sesgos y riesgos
+
+Uno de los riesgos más estudiados es el sesgo. Como los modelos aprenden de datos generados por personas y por sociedades
+concretas, pueden reproducir y amplificar prejuicios históricos. Se han documentado casos de sistemas de selección de
+personal que penalizaban currículos de mujeres, de herramientas de reconocimiento facial con peores tasas de acierto para
+ciertos grupos y de modelos de riesgo que perjudicaban a determinadas comunidades. Mitigar estos problemas requiere revisar
+los datos, medir el rendimiento por grupos, diseñar métricas de equidad y, sobre todo, decidir de forma explícita qué
+significa un resultado justo en cada contexto, porque existen varias definiciones que no siempre son compatibles entre sí.
+
+La privacidad es otro asunto central. Los modelos se entrenan y se utilizan con enormes cantidades de información, parte de
+la cual puede ser personal o confidencial. Existe el riesgo de que un modelo memorice y reproduzca fragmentos de sus datos de
+entrenamiento, de que los usuarios introduzcan datos sensibles en servicios externos sin saberlo y de que la combinación de
+fuentes permita reidentificar a personas. Entre las respuestas posibles figuran la minimización de datos, la anonimización,
+el entrenamiento con privacidad diferencial, el procesamiento local y las políticas claras de retención. En cualquier caso,
+conviene que las organizaciones sepan qué datos envían a qué proveedor y bajo qué condiciones.
+
+La desinformación y los contenidos sintéticos plantean un problema para la confianza social. Es cada vez más sencillo
+producir textos convincentes, imágenes falsas, vídeos manipulados o voces clonadas a escala y a bajo coste. Eso facilita
+campañas de manipulación, fraudes y acoso, y puede erosionar la confianza incluso en los contenidos auténticos, porque
+cualquiera puede alegar que una prueba real es una falsificación. Se investigan marcas de agua, sistemas de procedencia que
+registran cómo se creó un contenido y herramientas de detección, aunque ninguna es infalible. La alfabetización mediática y
+la verificación de fuentes siguen siendo defensas imprescindibles.
+
+También preocupan los usos maliciosos y los riesgos de seguridad. Los modelos pueden ayudar a redactar correos de
+suplantación más convincentes, a automatizar parte de los ataques informáticos o a facilitar el acceso a información
+peligrosa. Además, los sistemas basados en modelos de lenguaje tienen vulnerabilidades propias, como la inyección de
+instrucciones, en la que un texto aparentemente inocuo contiene órdenes ocultas que el modelo obedece, o la fuga de
+información confidencial incluida en la petición. Los desarrolladores responsables aplican defensas por capas: filtros de
+entrada y salida, permisos mínimos, aislamiento de las acciones sensibles y pruebas adversarias realizadas por equipos que
+intentan romper el sistema.
+
+Más allá de los daños concretos, existe un debate sobre riesgos a largo plazo. Algunos investigadores sostienen que sistemas
+cada vez más capaces podrían volverse difíciles de controlar si sus objetivos no están bien alineados con los valores
+humanos, y piden invertir en investigación de seguridad y alineamiento antes de que sea tarde. Otros consideran que esa
+preocupación distrae de los problemas actuales y demostrables, como los sesgos, la concentración de poder o la
+desinformación. Ambas posturas coinciden en lo esencial: la tecnología es lo bastante potente como para exigir evaluaciones
+serias, transparencia sobre sus limitaciones y mecanismos para corregir errores antes de que causen daños.
+
+La explicabilidad y la rendición de cuentas completan este panorama. Cuando un sistema participa en decisiones importantes,
+las personas afectadas merecen entender, al menos a grandes rasgos, en qué se basó el resultado y a quién dirigirse si
+consideran que es erróneo. Esto obliga a documentar los modelos, a registrar su uso, a conservar trazas de las decisiones y a
+asignar responsabilidades claras dentro de las organizaciones. Una frase como «lo decidió el algoritmo» no es una explicación
+aceptable ni una excusa legal: detrás de cada sistema hay personas que lo diseñaron, lo desplegaron y decidieron confiar en
+él para una tarea determinada.
+
+10. Regulación y gobernanza
+
+Los gobiernos de todo el mundo están definiendo cómo regular la inteligencia artificial, y los enfoques difieren. La Unión
+Europea aprobó un reglamento que clasifica los sistemas según su nivel de riesgo: prohíbe ciertos usos considerados
+inaceptables, impone obligaciones estrictas de documentación, supervisión y calidad de datos a los sistemas de alto riesgo,
+exige transparencia en otros, como los que interactúan con personas o generan contenido sintético, y deja casi libres los de
+riesgo mínimo. Otros países han optado por directrices sectoriales, compromisos voluntarios o normas centradas en aspectos
+concretos, de modo que el panorama global es fragmentado y evoluciona con rapidez.
+
+La regulación se enfrenta a una tensión permanente entre proteger a las personas y no frenar la innovación. Si las normas son
+demasiado vagas, no ofrecen seguridad jurídica ni protección real; si son demasiado rígidas o detalladas, pueden quedar
+obsoletas en cuanto la tecnología cambie y favorecer a las grandes empresas, las únicas con capacidad para cumplirlas. Por
+eso se tiende a regular los usos y los riesgos más que las técnicas concretas, a exigir procesos de evaluación y a prever
+revisiones periódicas. También se discute cómo repartir la responsabilidad entre quienes desarrollan los modelos, quienes los
+integran en productos y quienes los utilizan.
+
+Además de las leyes, existen normas técnicas, estándares de la industria y mecanismos de autorregulación. Las organizaciones
+adoptan marcos internos de gestión de riesgos, comités de revisión ética, evaluaciones de impacto y auditorías
+independientes. Los desarrolladores publican fichas que describen para qué se creó un modelo, con qué datos se entrenó, qué
+limitaciones tiene y en qué situaciones no debe emplearse. Estas prácticas de transparencia ayudan a los usuarios a decidir
+con criterio, y son una parte esencial de una cultura de ingeniería responsable que no espera a que lo exija una norma para
+hacer las cosas bien.
+
+11. Impacto en el empleo y en la economía
+
+El efecto de la inteligencia artificial sobre el trabajo es uno de los temas que más inquietud genera. La historia de la
+tecnología muestra que las innovaciones destruyen algunas ocupaciones, transforman muchas y crean otras nuevas, pero también
+que las transiciones pueden ser dolorosas para quienes las sufren. A diferencia de olas anteriores, que afectaron sobre todo
+al trabajo manual y repetitivo, los sistemas generativos inciden en tareas cognitivas como redactar, traducir, programar,
+analizar o diseñar. Eso significa que profesiones con formación elevada, antes consideradas a salvo, también deben prepararse
+para cambios profundos en la manera de trabajar.
+
+Los estudios disponibles sugieren que, en la mayoría de los casos, lo que se automatiza son tareas concretas y no empleos
+completos. Un puesto está formado por un conjunto de tareas, y la tecnología puede asumir algunas mientras las personas se
+concentran en otras, como el trato con clientes, el criterio, la creatividad o la coordinación. Por eso muchos trabajadores
+experimentan aumentos de productividad más que sustitución directa. El resultado final dependerá de decisiones colectivas: de
+cómo las empresas reorganicen el trabajo, de si se comparten los beneficios, de la formación disponible y de las políticas de
+protección que se pongan en marcha para quienes queden desplazados.
+
+Desde el punto de vista económico, existe el temor a una concentración excesiva. Entrenar los modelos más avanzados requiere
+inversiones enormes en datos, talento y capacidad de cálculo, lo que favorece a un pequeño número de empresas y países. Esto
+plantea preguntas sobre competencia, dependencia tecnológica y soberanía digital. Al mismo tiempo, los modelos de código
+abierto y los proveedores más pequeños ofrecen alternativas, y la bajada continua de los costes de uso permite que
+organizaciones modestas accedan a capacidades que hace poco estaban fuera de su alcance. El equilibrio entre ambas fuerzas
+determinará quién se beneficia de esta tecnología.
+
+La formación es la respuesta más repetida, y con razón. Las competencias que cobran valor combinan conocimiento de un ámbito,
+capacidad de plantear buenas preguntas, pensamiento crítico para evaluar lo que produce una máquina y habilidades de
+colaboración con sistemas inteligentes. Para las personas, aprender de forma continua deja de ser opcional. Para las
+instituciones educativas, el reto consiste en actualizar los currículos sin caer en modas pasajeras y sin descuidar los
+fundamentos, que siguen siendo la base para entender y cuestionar las herramientas. Para las empresas, invertir en la
+formación de sus equipos suele ser más rentable que sustituirlos.
+
+12. Impacto ambiental
+
+Entrenar y ejecutar modelos de gran tamaño consume energía y agua. Los centros de datos que alojan los procesadores
+especializados requieren electricidad para el cálculo y para la refrigeración, y su demanda crece con rapidez. Aunque es
+difícil obtener cifras fiables, porque muchos proveedores no publican datos detallados, hay consenso en que el entrenamiento
+de un modelo de frontera supone un coste energético considerable y en que, a escala, el uso diario de millones de consultas
+puede superar con el tiempo al coste del entrenamiento inicial. Esto convierte la eficiencia en un asunto ambiental además de
+económico.
+
+Existen formas de reducir esa huella. Los investigadores desarrollan arquitecturas más eficientes, técnicas de compresión
+como la cuantización o la destilación, que trasladan el conocimiento de un modelo grande a otro mucho más pequeño, y métodos
+para activar solo una parte del modelo en cada consulta. Los operadores de centros de datos mejoran la refrigeración,
+utilizan energías renovables y ubican las instalaciones donde la electricidad es más limpia. Y los equipos de producto pueden
+contribuir con una decisión sencilla: emplear el modelo más pequeño que resuelva bien la tarea, en lugar de usar siempre el
+más potente, lo que además reduce el coste y la latencia.
+
+La inteligencia artificial también puede ayudar a combatir el cambio climático. Se usa para optimizar el consumo de las redes
+eléctricas, integrar mejor las energías renovables, predecir fenómenos meteorológicos extremos, vigilar la deforestación
+mediante imágenes de satélite y descubrir materiales para baterías o captura de carbono. El balance neto es, por tanto,
+complejo: la tecnología consume recursos, pero puede ahorrar muchos más si se aplica a los problemas adecuados. Lo importante
+es medir y publicar el impacto real, evitar el despilfarro de usar potencia de cálculo sin necesidad y orientar la inversión
+hacia aplicaciones con beneficios claros.
+
+13. Ingeniería de productos con inteligencia artificial
+
+Construir un prototipo que impresiona en una demostración es sencillo; construir un producto fiable es mucho más difícil. Los
+sistemas basados en modelos son probabilísticos, de modo que una misma entrada puede producir salidas distintas y fallos
+imprevisibles. Esto obliga a adoptar una mentalidad de ingeniería rigurosa: definir qué significa funcionar bien, medirlo de
+forma continua, anticipar los modos de fallo y diseñar el sistema para que degrade con elegancia. La parte del modelo suele
+ser pequeña dentro del conjunto, y gran parte del trabajo consiste en los datos, la evaluación, la monitorización, la
+seguridad y la integración con el resto de la aplicación.
+
+La evaluación es el cimiento de todo lo demás. Sin un conjunto de casos de prueba representativo y unas métricas claras, cada
+cambio de modelo, de instrucciones o de configuración es una apuesta a ciegas. Los equipos maduros mantienen colecciones de
+ejemplos reales, con resultados esperados, que se ejecutan automáticamente ante cada modificación para detectar regresiones.
+Para tareas abiertas, como los resúmenes, donde no existe una única respuesta correcta, se combinan comprobaciones
+automáticas de propiedades, como la longitud o la inclusión de datos clave, con revisiones humanas y, con cautela, con
+modelos que actúan como jueces. Lo que no se mide se deteriora sin que nadie lo note.
+
+Una práctica sensata consiste en no acoplar la aplicación a un proveedor concreto. Los modelos cambian de nombre, de precio y
+de comportamiento con frecuencia; los servicios sufren caídas, límites de uso y degradaciones. Si el código de negocio
+depende directamente de la biblioteca de un proveedor, cualquiera de esos cambios obliga a tocarlo por todas partes. Una capa
+propia que defina un contrato estable, con adaptadores que traduzcan a cada servicio, aísla el resto del sistema. La
+aplicación pide un modelo por un nombre lógico, como rápido o potente, y la configuración decide qué modelo real y qué
+proveedor lo atienden en cada momento.
+
+Esa misma capa permite construir planes de respaldo. Cuando un destino falla por un motivo pasajero, como un límite de
+peticiones, un error del servidor o un tiempo de espera agotado, tiene sentido probar el siguiente de la lista. Pero cuando
+el fallo se debe a la propia petición, por ejemplo por un parámetro inválido, reintentar en otro destino solo desperdicia
+tiempo y dinero, porque fallaría igual. Distinguir entre ambos tipos de error, limitar el tiempo total de espera y registrar
+qué destino respondió y cuántos intentos fueron necesarios convierte un sistema frágil en uno resistente y, además,
+observable.
+
+El coste y la latencia son restricciones de diseño de primer orden. Los proveedores cobran por tokens, tanto de entrada como
+de salida, y los modelos más capaces son sensiblemente más caros y lentos. Conviene medir cuántos tokens consume cada
+función, elegir el modelo adecuado para cada tarea, acortar las instrucciones y el contexto innecesarios, reutilizar
+resultados cuando sea posible y emplear mecanismos de caché que ofrecen algunos proveedores para los prefijos repetidos.
+También es útil limitar la longitud de las respuestas y establecer presupuestos y alertas, porque un error de programación
+que dispare las llamadas puede generar una factura inesperada en cuestión de horas.
+
+La seguridad de la aplicación exige tratar toda entrada como no fiable. Un texto que el usuario pide resumir puede contener
+instrucciones disfrazadas, y un documento recuperado de internet puede intentar manipular al modelo. Por eso se separan con
+claridad las instrucciones del sistema y los datos, se limitan los permisos de las herramientas que el modelo puede invocar,
+se validan las salidas antes de actuar sobre ellas y se evita incluir secretos en las peticiones. Las claves de acceso se
+guardan fuera del código, en variables de entorno o en gestores de secretos, y nunca se suben al repositorio ni se escriben
+en los registros.
+
+Finalmente, la observabilidad cierra el ciclo. Un sistema en producción debe registrar qué se pidió, qué modelo respondió,
+cuántos tokens se usaron, cuánto tardó, si hubo errores o reintentos y, siempre que la privacidad lo permita, la calidad
+percibida de los resultados. Con esos datos se detectan degradaciones, se comparan alternativas con evidencias en lugar de
+impresiones y se justifican las decisiones de coste. La retroalimentación de los usuarios, como un simple pulgar hacia arriba
+o abajo, enriquece los conjuntos de evaluación y permite que el producto mejore de forma sostenida en lugar de depender de la
+intuición de unos pocos.
+
+14. El futuro
+
+Es arriesgado hacer predicciones, y la historia de la inteligencia artificial está llena de pronósticos fallidos tanto por
+exceso como por defecto. Aun así, algunas tendencias parecen claras. Los modelos seguirán mejorando en razonamiento, en
+manejo de contextos largos y en la integración de texto, imagen, audio y vídeo. Los agentes capaces de planificar y actuar
+tendrán más peso, y los modelos pequeños y eficientes, ejecutados en dispositivos personales, ganarán terreno por razones de
+privacidad, coste y latencia. También se espera una mayor especialización, con modelos adaptados a sectores como la medicina,
+el derecho o la ingeniería, que combinan conocimiento general con datos propios.
+
+Quedan retos científicos abiertos. Los sistemas actuales necesitan muchos más datos que una persona para aprender un
+concepto, razonan de forma desigual en problemas largos y carecen de una comprensión robusta de la causalidad y del mundo
+físico. Se investigan nuevas arquitecturas, métodos de razonamiento más fiables, formas de combinar aprendizaje con
+representaciones simbólicas y técnicas para verificar el comportamiento de los modelos. No está claro si basta con escalar
+las técnicas actuales o si harán falta ideas nuevas, y los expertos discrepan abiertamente, lo cual es una buena señal de que
+se trata de un campo vivo y no de una ciencia cerrada.
+
+En lo social, la cuestión decisiva no es solo qué podrá hacer la tecnología, sino qué decidiremos hacer con ella. Cómo se
+reparten sus beneficios, qué usos se prohíben, qué derechos tienen las personas frente a las decisiones automatizadas, cómo
+se protege la creación humana y cómo se preserva el criterio propio son preguntas que no puede responder un ingeniero en
+solitario. Requieren la participación de instituciones, empresas, profesionales y ciudadanos. Una sociedad bien informada,
+con alfabetización tecnológica suficiente, estará mejor preparada para aprovechar las oportunidades y para exigir garantías
+cuando los riesgos así lo aconsejen.
+
+15. Conclusión
+
+La inteligencia artificial ha pasado de ser una aspiración académica a una tecnología de uso masivo. Su historia enseña a
+desconfiar tanto del entusiasmo desmedido como del escepticismo automático: ha habido promesas incumplidas y ha habido
+avances que superaron cualquier expectativa. Entender sus fundamentos, desde los datos y el entrenamiento hasta los límites
+de los modelos de lenguaje, permite usarla con criterio. Saber que un modelo predice texto plausible, que puede equivocarse
+con seguridad y que refleja los datos con los que aprendió es la mejor protección contra la fe ciega y contra el rechazo
+injustificado.
+
+Para quienes construyen productos, la lección práctica es que la calidad no surge del modelo por sí solo, sino de la
+ingeniería que lo rodea: contratos estables que eviten depender de un proveedor, configuración en lugar de código fijo,
+planes de respaldo que distingan los fallos pasajeros de los errores de petición, pruebas automáticas, evaluación continua,
+control de costes y seguridad desde el diseño. Para la sociedad, la lección es que los beneficios no son automáticos y que
+los riesgos tampoco son inevitables; dependen de decisiones humanas. Con transparencia, supervisión y formación, la
+inteligencia artificial puede ser una herramienta que amplíe las capacidades de las personas en lugar de sustituir su juicio.

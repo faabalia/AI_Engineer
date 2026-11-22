@@ -1,0 +1,19 @@
+# Dependencias
+node_modules/
+
+# Secretos: nunca subir las API keys
+.env
+.env.*
+!.env.example
+
+# Salida de compilación de TypeScript
+dist/
+
+# Cobertura de tests
+coverage/
+
+# Logs
+*.log
+
+# Sistema operativo
+.DS_Store

@@ -1,0 +1,12 @@
+{
+  "logical_models": {
+    "rapido": [{ "destination": "curso_anthropic", "model": "fast" }]
+  },
+  "destinations": {
+    "curso_anthropic": {
+      "format": "anthropic",
+      "base_url_env": "ANTHROPIC_BASE_URL",
+      "api_key_env": "ANTHROPIC_API_KEY"
+    }
+  }
+}
