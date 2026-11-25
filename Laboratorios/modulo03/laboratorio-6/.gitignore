@@ -1,0 +1,16 @@
+# Dependencias
+node_modules/
+
+# Secretos: nunca subir las API keys
+.env
+.env.*
+!.env.example
+
+# Salida de compilación
+dist/
+
+# Sistema operativo
+.DS_Store
+
+# Cobertura de tests
+coverage/

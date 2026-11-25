@@ -1,0 +1,33 @@
+{
+  "name": "laboratorio-6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "evaluar": "tsx src/scripts/ejecutar.ts",
+    "evaluar:falso": "tsx src/scripts/ejecutar.ts --modelos fast-falso --variantes vago+esquema,concreto+esquema --repeticiones 1",
+    "ejemplo-tabla": "tsx src/scripts/ejemplo-tabla.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@langchain/core": "^1.5.1",
+    "@langchain/openai": "^1.5.8",
+    "dotenv": "^18.0.10",
+    "langchain": "^1.6.8",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@vitest/coverage-v8": "^4.1.12",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.12"
+  }
+}
