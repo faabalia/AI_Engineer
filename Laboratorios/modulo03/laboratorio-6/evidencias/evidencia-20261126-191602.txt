@@ -1,0 +1,36 @@
+Umbral de acierto medio: 75%
+
+modelo  prompt  conjunto  acierto (mín/medio/máx)  tiempo medio  umbral
+fast    v1      dev       72% / 72% / 72%          1.6 s         ✗
+fast    v1      holdout   67% / 67% / 67%          2.0 s         ✗
+fast    v2      dev       89% / 89% / 89%          2.1 s         ✓
+fast    v2      holdout   100% / 100% / 100%       2.0 s         ✓
+smart   v1      dev       39% / 43% / 44%          1.4 s         ✗
+smart   v1      holdout   50% / 50% / 50%          2.6 s         ✗
+smart   v2      dev       100% / 100% / 100%       2.3 s         ✓
+smart   v2      holdout   100% / 100% / 100%       2.4 s         ✓
+
+Casos fallados (dev y hold-out):
+fast  vago+esquema  dev  dev-05  esperada: apto  falló 5/5  respondió: revisar x5
+fast  vago+esquema  dev  dev-08  esperada: descartar  falló 5/5  respondió: revisar x5
+fast  vago+esquema  dev  dev-09  esperada: descartar  falló 5/5  respondió: revisar x5
+fast  vago+esquema  dev  dev-10  esperada: descartar  falló 5/5  respondió: revisar x5
+fast  vago+esquema  dev  dev-11  esperada: descartar  falló 5/5  respondió: revisar x5
+fast  vago+esquema  holdout  hold-02  esperada: descartar  falló 5/5  respondió: revisar x5
+fast  vago+esquema  holdout  hold-05  esperada: revisar  falló 5/5  respondió: apto x5
+fast  concreto+esquema  dev  dev-17  esperada: revisar  falló 5/5  respondió: apto x5
+fast  concreto+esquema  dev  dev-18  esperada: revisar  falló 5/5  respondió: apto x5
+smart  vago+esquema  dev  dev-01  esperada: apto  falló 5/5  respondió: revisar x5
+smart  vago+esquema  dev  dev-02  esperada: apto  falló 5/5  respondió: revisar x5
+smart  vago+esquema  dev  dev-03  esperada: apto  falló 5/5  respondió: revisar x5
+smart  vago+esquema  dev  dev-04  esperada: apto  falló 5/5  respondió: revisar x5
+smart  vago+esquema  dev  dev-05  esperada: apto  falló 5/5  respondió: revisar x5
+smart  vago+esquema  dev  dev-06  esperada: apto  falló 5/5  respondió: revisar x5
+smart  vago+esquema  dev  dev-07  esperada: descartar  falló 1/5  respondió: revisar x1
+smart  vago+esquema  dev  dev-08  esperada: descartar  falló 5/5  respondió: revisar x5
+smart  vago+esquema  dev  dev-09  esperada: descartar  falló 5/5  respondió: revisar x5
+smart  vago+esquema  dev  dev-10  esperada: descartar  falló 5/5  respondió: revisar x5
+smart  vago+esquema  dev  dev-11  esperada: descartar  falló 5/5  respondió: revisar x5
+smart  vago+esquema  holdout  hold-01  esperada: apto  falló 5/5  respondió: revisar x5
+smart  vago+esquema  holdout  hold-02  esperada: descartar  falló 5/5  respondió: revisar x5
+smart  vago+esquema  holdout  hold-03  esperada: apto  falló 5/5  respondió: revisar x5

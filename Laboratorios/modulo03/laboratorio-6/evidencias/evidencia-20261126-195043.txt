@@ -1,0 +1,63 @@
+Umbral de acierto medio: 75%
+
+modelo      prompt  conjunto  acierto (mín/medio/máx)  tiempo medio  umbral
+fast-falso  v1      dev       0% / 0% / 0%             0.1 s         ✗
+fast-falso  v1      holdout   0% / 0% / 0%             0.1 s         ✗
+fast-falso  v2      dev       0% / 0% / 0%             0.1 s         ✗
+fast-falso  v2      holdout   0% / 0% / 0%             0.1 s         ✗
+
+Aviso: estas llamadas fallaron y cuentan como fallo en el acierto:
+- fast-falso v1 dev: 18 de 18 llamadas con error
+- fast-falso v1 holdout: 6 de 6 llamadas con error
+- fast-falso v2 dev: 18 de 18 llamadas con error
+- fast-falso v2 holdout: 6 de 6 llamadas con error
+
+Casos fallados (dev y hold-out):
+fast-falso  vago+esquema  dev  dev-01  esperada: apto  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  dev  dev-02  esperada: apto  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  dev  dev-03  esperada: apto  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  dev  dev-04  esperada: apto  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  dev  dev-05  esperada: apto  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  dev  dev-06  esperada: apto  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  dev  dev-07  esperada: descartar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  dev  dev-08  esperada: descartar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  dev  dev-09  esperada: descartar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  dev  dev-10  esperada: descartar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  dev  dev-11  esperada: descartar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  dev  dev-12  esperada: descartar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  dev  dev-13  esperada: revisar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  dev  dev-14  esperada: revisar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  dev  dev-15  esperada: revisar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  dev  dev-16  esperada: revisar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  dev  dev-17  esperada: revisar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  dev  dev-18  esperada: revisar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  holdout  hold-01  esperada: apto  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  holdout  hold-02  esperada: descartar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  holdout  hold-03  esperada: apto  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  holdout  hold-04  esperada: descartar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  holdout  hold-05  esperada: revisar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  vago+esquema  holdout  hold-06  esperada: revisar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  dev  dev-01  esperada: apto  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  dev  dev-02  esperada: apto  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  dev  dev-03  esperada: apto  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  dev  dev-04  esperada: apto  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  dev  dev-05  esperada: apto  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  dev  dev-06  esperada: apto  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  dev  dev-07  esperada: descartar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  dev  dev-08  esperada: descartar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  dev  dev-09  esperada: descartar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  dev  dev-10  esperada: descartar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  dev  dev-11  esperada: descartar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  dev  dev-12  esperada: descartar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  dev  dev-13  esperada: revisar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  dev  dev-14  esperada: revisar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  dev  dev-15  esperada: revisar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  dev  dev-16  esperada: revisar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  dev  dev-17  esperada: revisar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  dev  dev-18  esperada: revisar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  holdout  hold-01  esperada: apto  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  holdout  hold-02  esperada: descartar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  holdout  hold-03  esperada: apto  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  holdout  hold-04  esperada: descartar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  holdout  hold-05  esperada: revisar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1
+fast-falso  concreto+esquema  holdout  hold-06  esperada: revisar  falló 1/1  respondió: [error: 401 key not allowed to access model. This key can only acces] x1

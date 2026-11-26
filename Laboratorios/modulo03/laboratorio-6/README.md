@@ -109,9 +109,13 @@ El proxy responde `429 Too many requests` si recibe demasiadas llamadas seguidas
 - `middleware`: `modelRetryMiddleware` para los fallos pasajeros del proxy. Solo reintenta 429, 408, 409, 5xx y fallos de conexión; el resto de errores (por ejemplo 400, 401 o 404) fallan al instante, sin esperas.
 - `invoke(..., { recursionLimit: 5 })`: acota los pasos del agente. El modelo se crea con `ChatOpenAI`, con `OPENAI_BASE_URL` indicada explícitamente.
 
-## Evidencias
+## Evidencias y análisis
 
-- `evidencias/`: un archivo `evidencia-yyyymmdd-hhmmss.txt` por cada ejecución (el estudio, las pruebas cortas y la del modelo falso).
+- `evidencias/`: un archivo `evidencia-yyyymmdd-hhmmss.txt` por cada ejecución que se quiera conservar. Contiene:
+  - `evidencia-20261126-191602.txt`: el estudio completo (2 modelos x 2 versiones de prompt con esquema, 5 repeticiones).
+  - `evidencia-20261126-195043.txt`: la ejecución con el modelo que no existe (`fast-falso`).
+  - `evidencia_modelos_buenos.png`: captura de la tabla del estudio.
+- `analisis.md`: análisis del estudio con los cuatro puntos del enunciado (combinación para producción, cambio entre v1 y v2, casos fallados del hold-out y variación entre repeticiones).
 
 ## Variantes de prompt
 
